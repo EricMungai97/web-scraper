@@ -4,7 +4,6 @@ import re
 
 
 def get_citations_needed_count(url):
-    pass
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "html.parser")
     # returns list with all the citations
